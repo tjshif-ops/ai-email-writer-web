@@ -220,7 +220,7 @@ export default function Home() {
             <Link href="/privacy" className="hover:text-slate-300 transition">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-slate-300 transition">Terms of Service</Link>
             <Link href="/recover" className="hover:text-slate-300 transition">Recover License</Link>
-            <a href="mailto:support@aiemailwriter.com" className="hover:text-slate-300 transition">Contact</a>
+            <a href="mailto:support@babname.cn" className="hover:text-slate-300 transition">Contact</a>
           </div>
         </div>
       </footer>

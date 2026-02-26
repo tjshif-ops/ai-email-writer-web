@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       "AI-powered email replies right inside Gmail. Choose your tone, generate a reply, and send -- all in one click.",
     type: "website",
-    url: "https://aiemailwriter.com",
+    url: "https://babname.cn",
   },
   twitter: {
     card: "summary_large_image",
