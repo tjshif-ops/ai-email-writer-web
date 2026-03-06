@@ -6,7 +6,7 @@ export default function Home() {
       {/* Nav */}
       <nav className="flex items-center justify-between px-6 py-4 max-w-6xl mx-auto">
         <div className="flex items-center gap-2 text-xl font-bold">
-          <span className="text-2xl">&#x2728;</span> SunnyDay AI Email Writer
+          <span className="text-2xl">&#x2728;</span> SunnyDay Cold Email
         </div>
         <div className="flex items-center gap-6 text-sm text-slate-300">
           <a href="#features" className="hover:text-white transition">Features</a>
@@ -28,12 +28,12 @@ export default function Home() {
           Now available on Chrome Web Store
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-white via-indigo-200 to-purple-200 bg-clip-text text-transparent">
-          Write Perfect Emails
-          <br />in Seconds, Not Minutes
+          Write High-Converting
+          <br />Cold Emails in 30 Seconds
         </h1>
         <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-          AI-powered email replies right inside Gmail. Choose your tone,
-          generate a reply, and send -- all in one click.
+          Paste a LinkedIn profile, get a personalized cold email that gets replies.
+          AI-powered outreach for sales teams, founders, and freelancers.
         </p>
         <div className="flex items-center justify-center gap-4">
           <a
@@ -41,16 +41,16 @@ export default function Home() {
             target="_blank"
             className="bg-indigo-600 hover:bg-indigo-500 px-8 py-3.5 rounded-full text-lg font-semibold transition shadow-lg shadow-indigo-500/25"
           >
-            Add to Chrome -- It&apos;s Free
+            Add to Chrome -- Free 10 Emails
           </a>
           <a
             href="#demo"
             className="border border-slate-600 hover:border-slate-400 px-8 py-3.5 rounded-full text-lg font-semibold transition text-slate-300 hover:text-white"
           >
-            See Demo
+            See How It Works
           </a>
         </div>
-        <p className="mt-4 text-sm text-slate-500">Free 5 replies/day - No credit card required</p>
+        <p className="mt-4 text-sm text-slate-500">Free 10 cold emails/month - No credit card required</p>
 
         {/* Hero Screenshot Placeholder */}
         <div className="mt-16 rounded-2xl border border-slate-700/50 bg-slate-800/50 p-8 shadow-2xl">
@@ -62,41 +62,41 @@ export default function Home() {
 
       {/* Features */}
       <section id="features" className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-center mb-4">Why SunnyDay AI Email Writer?</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">Why SunnyDay Cold Email?</h2>
         <p className="text-slate-400 text-center mb-16 max-w-2xl mx-auto">
-          Stop staring at blank reply boxes. Let AI handle the writing while you focus on what matters.
+          Stop sending generic templates. Generate personalized cold emails that get 3x more replies.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
+              icon: "linkedin",
+              title: "LinkedIn Analysis",
+              desc: "Paste a LinkedIn profile URL. AI extracts company, role, and pain points automatically.",
+            },
+            {
               icon: "zap",
-              title: "One-Click Replies",
-              desc: "Click the AI Reply button right inside Gmail. No switching tabs, no copy-pasting.",
+              title: "30-Second Generation",
+              desc: "Get 3 personalized cold email variations in seconds. Pick the best one and send.",
             },
             {
-              icon: "palette",
-              title: "4 Tone Options",
-              desc: "Professional, Friendly, Concise, or Detailed -- match your voice for every situation.",
+              icon: "target",
+              title: "Subject Line A/B",
+              desc: "5 subject line options with predicted open rates. Test and optimize for maximum impact.",
             },
             {
-              icon: "eye",
-              title: "Preview & Edit",
-              desc: "Review the AI draft before inserting. Edit, regenerate, or copy -- full control.",
+              icon: "repeat",
+              title: "Follow-up Sequences",
+              desc: "Auto-generate Day 1, Day 3, Day 7 follow-ups. Persistence without being annoying.",
+            },
+            {
+              icon: "chart",
+              title: "Reply Rate Tracking",
+              desc: "Track open rates, reply rates, and conversions. See what works and double down.",
             },
             {
               icon: "lock",
               title: "Privacy First",
-              desc: "Your emails stay in your browser. We only send the content to the AI API -- nothing else.",
-            },
-            {
-              icon: "dollar",
-              title: "Dirt Cheap",
-              desc: "Powered by DeepSeek AI. Each reply costs less than $0.001. Unlimited Pro for $8/mo.",
-            },
-            {
-              icon: "wrench",
-              title: "Bring Your Own Key",
-              desc: "Use your own API key for maximum privacy and zero usage limits.",
+              desc: "Your prospects data stays in your browser. We only send content to the AI API.",
             },
           ].map((f, i) => (
             <div
@@ -104,11 +104,12 @@ export default function Home() {
               className="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-indigo-500/30 transition"
             >
               <div className="text-3xl mb-4">{
+                f.icon === "linkedin" ? "\uD83D\uDD17" :
                 f.icon === "zap" ? "\u26A1" :
-                f.icon === "palette" ? "\uD83C\uDFA8" :
-                f.icon === "eye" ? "\uD83D\uDC40" :
-                f.icon === "lock" ? "\uD83D\uDD12" :
-                f.icon === "dollar" ? "\uD83D\uDCB0" : "\uD83D\uDD27"
+                f.icon === "target" ? "\uD83C\uDFAF" :
+                f.icon === "repeat" ? "\uD83D\uDD04" :
+                f.icon === "chart" ? "\uD83D\uDCCA" :
+                f.icon === "lock" ? "\uD83D\uDD12" : "\uD83D\uDD27"
               }</div>
               <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed">{f.desc}</p>
@@ -128,10 +129,10 @@ export default function Home() {
             <div className="text-4xl font-bold mb-1">$0</div>
             <p className="text-slate-400 text-sm mb-6">Forever free</p>
             <ul className="space-y-3 text-sm text-slate-300 mb-8">
-              <li>5 replies per day</li>
-              <li>All 4 tone options</li>
-              <li>Preview & edit</li>
-              <li>Gmail integration</li>
+              <li>10 cold emails / month</li>
+              <li>LinkedIn analysis</li>
+              <li>3 email variations</li>
+              <li>Basic subject lines</li>
             </ul>
             <a
               href="https://chrome.google.com/webstore"
@@ -148,16 +149,16 @@ export default function Home() {
             </div>
             <h3 className="text-lg font-semibold mb-1">Pro</h3>
             <div className="text-4xl font-bold mb-1">
-              $8<span className="text-lg font-normal text-slate-400">/mo</span>
+              $29<span className="text-lg font-normal text-slate-400">/mo</span>
             </div>
-            <p className="text-slate-400 text-sm mb-6">For power email users</p>
+            <p className="text-slate-400 text-sm mb-6">For sales teams and founders</p>
             <ul className="space-y-3 text-sm text-slate-300 mb-8">
-              <li><strong>Unlimited</strong> replies</li>
-              <li>All 4 tone options</li>
-              <li>Preview & edit</li>
-              <li>Gmail integration</li>
-              <li>Priority AI model</li>
-              <li>Custom tone presets</li>
+              <li><strong>200 cold emails</strong> / month</li>
+              <li>Unlimited LinkedIn analysis</li>
+              <li>Follow-up sequences (Day 1/3/7)</li>
+              <li>Subject line A/B testing</li>
+              <li>Reply rate tracking</li>
+              <li>Chrome extension</li>
             </ul>
             <a
               href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-99Y6711460065674WNGRGXII"
@@ -165,7 +166,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="block text-center bg-indigo-600 hover:bg-indigo-500 py-3 rounded-xl font-medium transition shadow-lg shadow-indigo-500/25"
             >
-              Subscribe - $8/mo
+              Start Free Trial
             </a>
           </div>
         </div>
@@ -177,20 +178,20 @@ export default function Home() {
         <div className="space-y-6">
           {[
             {
-              q: "Is my email data safe?",
-              a: "Yes. Your email content is processed entirely in your browser and sent directly to the AI API. We never store or see your emails.",
+              q: "How does LinkedIn analysis work?",
+              a: "Paste a LinkedIn profile URL. Our AI extracts the person's company, role, and potential pain points to generate a highly personalized cold email.",
             },
             {
-              q: "What AI model does it use?",
-              a: "We use DeepSeek AI by default, which offers excellent quality at very low cost. You can also use your own API key with any OpenAI-compatible provider.",
+              q: "What's a good reply rate for cold emails?",
+              a: "Industry average is 5-8%. With SunnyDay's personalized approach, our users typically see 15-25% reply rates.",
             },
             {
-              q: "Can I use it with Outlook or other email clients?",
-              a: "Currently we support Gmail only. Outlook and other clients are on our roadmap.",
+              q: "Can I send bulk cold emails?",
+              a: "Pro plan includes batch generation (up to 100 emails at once). For sending, we recommend connecting your own Gmail/Outlook to stay within daily limits.",
             },
             {
-              q: "How do I cancel my Pro subscription?",
-              a: "You can cancel anytime from the extension settings or by emailing support. No questions asked.",
+              q: "Is this compliant with GDPR and CAN-SPAM?",
+              a: "Yes. We help you generate personalized, non-spammy content. Always include an unsubscribe option and respect recipient preferences.",
             },
           ].map((item, i) => (
             <div key={i} className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
@@ -203,21 +204,21 @@ export default function Home() {
 
       {/* CTA */}
       <section className="max-w-4xl mx-auto px-6 py-24 text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to write emails 10x faster?</h2>
-        <p className="text-slate-400 mb-8">Join thousands of professionals who save hours every week.</p>
+        <h2 className="text-3xl font-bold mb-4">Ready to 3x Your Reply Rate?</h2>
+        <p className="text-slate-400 mb-8">Join sales teams and founders who close more deals with personalized cold emails.</p>
         <a
           href="https://chrome.google.com/webstore"
           target="_blank"
           className="inline-block bg-indigo-600 hover:bg-indigo-500 px-8 py-3.5 rounded-full text-lg font-semibold transition shadow-lg shadow-indigo-500/25"
         >
-          Install SunnyDay AI Email Writer - Free
+          Install SunnyDay Cold Email - Free 10 Emails
         </a>
       </section>
 
       {/* Footer */}
       <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-          <span>2026 SunnyDay AI Email Writer. All rights reserved.</span>
+          <span>2026 SunnyDay Cold Email. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-slate-300 transition">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-slate-300 transition">Terms of Service</Link>
