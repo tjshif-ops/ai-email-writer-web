@@ -160,7 +160,9 @@ export default function Home() {
               <li>Custom tone presets</li>
             </ul>
             <a
-              href="/api/checkout"
+              href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-99Y6711460065674WNGRGXII"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block text-center bg-indigo-600 hover:bg-indigo-500 py-3 rounded-xl font-medium transition shadow-lg shadow-indigo-500/25"
             >
               Subscribe - $8/mo
